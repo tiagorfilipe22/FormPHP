@@ -1,6 +1,5 @@
 <?php
 
-if (isset($_post['submit'])) {
        $name = $_post['name'];
        $subject = $_post['subject'];
        $mailFrom = $_post['mail'];
@@ -13,7 +12,5 @@ if (isset($_post['submit'])) {
        mail($mailTo, $subject, $txt, $headers);
        header("Location: index.php?mailsend");
 
-       # code...
-}
 
 ?>
