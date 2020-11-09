@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Brevement</title>
-	<link rel="stylesheet" href="css/styles99.css" type="text/css">
-	<script type="text/javascript" src="js/clock.js"></script>
-	
+	<title>Contact Form</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
-	<nav>
-		
-	</nav>
-		
 
-<div class="container">
-  <h1 id="headline">Brevemente</h1>
-  <div id="countdown">
-    <ul>
-      <li><span id="days"></span>days</li>
-      <li><span id="hours"></span>Hours</li>
-      <li><span id="minutes"></span>Minutes</li>
-      <li><span id="seconds"></span>Seconds</li>
-    </ul>
-  </div>
-  <div class="message">
-    <div id="content">
-      <span class="emoji">🥳</span>
-      <span class="emoji">🎉</span>
-      <span class="emoji">🎂</span>
-    </div>
-  </div>
-</div>
+	<p>SEND E-MAIL</p>
+	<form class="contact-form" action="sendemail.php" method="post">
+		<input type="text" name="name" placeholder="Full Name">
+		<input type="text" name="mail" placeholder="Your Email">
+		<input type="text" name="subject" placeholder="Subject">
+		<textarea name="message" placeholder="Message"></textarea>
+		<button type="submit" name="submit">SEND MAIL</button>
 
+	</form>
 
 </body>
 </html>
