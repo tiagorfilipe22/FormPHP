@@ -1,5 +1,6 @@
 <?php
 
+if (isset($_post['submit'])) {
        $name = $_post['name'];
        $subject = $_post['subject'];
        $mailFrom = $_post['mail'];
@@ -10,7 +11,9 @@
        $txt = "You have received an email from ".$name. ".\n\n".$message;
 
        mail($mailTo, $subject, $txt, $headers);
-       header("Location: index.php?mailsend");
+       header("Location: index.html?mailsend");
 
+       # code...
+}
 
 ?>
